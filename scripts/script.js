@@ -6,7 +6,7 @@ function getComputerChoice(){
 }
 
 function getHumanChoice() {
-    return prompt();
+    return prompt("Please enter your choice form 'rock, scissor, paper'");
 }
 
 function playGame() {
@@ -15,7 +15,7 @@ function playGame() {
 
     function playRound(humanChoice, computerChoice) {
         if (humanChoice.toLowerCase() === computerChoice) {
-            console.log(`Its a tie. Computer Choice ${computerChoice} and Human Choice ${humanChoice}`)
+            console.log(`Its a tie. Computer Choice ${computerChoice} and Your Choice ${humanChoice}`)
         }
 
         if (computerChoice === 'paper' && humanChoice.toLowerCase() === 'rock') {
@@ -66,4 +66,5 @@ function playGame() {
     }
 }
 
-playGame()
+const playBtn = document.getElementById('play')
+playBtn.onclick = playGame

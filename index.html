@@ -8,12 +8,29 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        button {
+            display: block;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: blueviolet;
+            color: white;
+            border: 0px;
+            border-radius: 8px;
         }
     </style>
     <title>Rock Paper Scissor Game</title>
 </head>
 <body>
-    <h1>Open your console to play the game</h1>
+    <h1>Open your console and click the below button to play the game</h1>
+    <button id="play">Play</button>
     <script src="scripts/script.js"></script>
 </body>
 </html>
