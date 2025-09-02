@@ -3,6 +3,7 @@ The idea behind this game is that the computer chooses randomly between Rock, Pa
 - Paper covers the rock with these choices the one who choose paper is the winner
 - Scissor cuts the paper with these choices the one who choose scissor is the winner
 - Rock crush the scissor with these choices the one who choose the rock is the winner
+
 If it is a tie no one is winning
 Then it outputs the winner in the console.
 
