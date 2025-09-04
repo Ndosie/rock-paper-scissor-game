@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        h1 {
-            text-align: center;
-        }
-        button {
-            display: block;
-            padding: 16px 32px;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: blueviolet;
-            color: white;
-            border: 0px;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Rock Paper Scissor Game</title>
 </head>
 <body>
     <h1>Rock Paper Scissor Game</h1>
-    <h2>Open your console and click the below button to play the game</h2>
-    <button id="play">Play</button>
+    <h2>Click one of the below buttons to select your choice. Any who reach 5 points first becomes a winner</h2>
+    <div id="message"></div>
+    <div id="points"></div>
+    <div id="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissor">Scissor</button>
+    </div>
+    <div id="results">
+        <p></p>
+        <button id="replay">Replay</button>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
