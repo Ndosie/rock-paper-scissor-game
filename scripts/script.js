@@ -72,9 +72,11 @@ function playGame(humanChoice) {
             buttonsDiv.style.display = 'none'
             resultsDiv.style.display = 'block'
             if (humanScore > computerScore) {
-                messageParagraph.textContent = 'You are the WIIIINEERR! Congratulations.'
+                messageParagraph.textContent = `You are the WIIIINEERR! Congratulations.
+                    Your points: ${humanScore}, Computer points: ${computerScore}`
             } else {
-                messageParagraph.textContent = 'You lose! We are sorry.'
+                messageParagraph.textContent = `You lose! We are sorry.
+                    Your points: ${humanScore}, Computer points: ${computerScore}`
             }
             msgDiv.textContent = ''
             pointsDiv.textContent = ''

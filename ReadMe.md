@@ -24,4 +24,27 @@ Then it outputs the winner in the console.
 5. If human score is equal to computer score print `No winner` with their scores.
 6. If human score is greater than computer score print `You are the winner` otherwise print `You loose` with their scores.
 
+
+## Pseudocode UI Update:
+
+1. Initialize computer score and human score to zero
+2. Show user button with three choices
+3. User select the choice
+4. get computer choice
+5. If no one has reached five points display buttons
+  1. Keep showing buttons for user to select the choice
+  2. Get the computer choice
+  3. If computers’ choice is equal to the users’ choice print `Its a tie` with their choices
+  4. If computers’ choice is paper and users’ choice is rock, print `You lose! Paper covers the rock` and increment computers’ score by one.
+  5. If users’ choice  is paper and computers’ is rock, print `You won! Paper covers the Rock` and increment users’ score by one.
+  6. If computers’ choice is scissor and users’ choice is paper, print `You lose! Scissor cuts Paper` and increments computers’ score by one.
+  7. If users’ choice  is scissor and computers’ is paper, print `You won! Scissor cuts Paper` and increment users’ score by one.
+  8. If computers’ choice is rock and users’ choice is scissor, print `You lose! Rock crush Scissors` and increment computers’ score by one.
+  9. If users’ choice  is rock and computers’ is scissor, print `You won! Rock crush Scissors` and increment users’ score by one.
+6. If either of the two has reached five points, 
+  1. Hide buttons
+  2. Announce the winner
+  3. Reset the scores and allow the user to restart the game.
+
+
 Go ahead to play by following this [link.](https://ndosie.github.io/rock-paper-scissor-game/)
